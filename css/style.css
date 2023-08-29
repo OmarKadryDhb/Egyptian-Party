@@ -1,0 +1,142 @@
+/* general */
+/* start general */
+:root{
+    --main-color:red;
+}
+body{
+    /* overflow: hidden; */
+}
+/* end general */
+/* Start Section SideBar */
+#sideBar{
+    display: flex;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    position: fixed;
+    
+}
+.sideBar-ineer{
+    background-color:black;
+    padding: 10px;
+    width: 250px;
+    
+}
+.options a{
+    transition: all 0.5s;
+    color: white;
+}
+.options a:hover{
+    color:var(--main-color);
+}
+
+#close{
+    padding: 10px ;
+    cursor: pointer;
+    color: white;
+    transform: translateX(190px);
+    transition: all 0.5s;   
+}
+#close:hover{
+    color: var(--main-color);
+}
+#open{
+    transform: translateY(200px);
+    align-self: start;
+    color: white;
+    padding: 10px ;
+    cursor: pointer;
+    
+}
+/* End Section SideBar */
+
+/* Start Section Main */
+main{
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh;
+    position: relative;
+}
+main .Home-layer{
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+}
+main .content h3 {
+    font-size: 60px;
+    font-weight: bold;
+}
+/* End Section Main */
+
+/* Start Section Singers */
+
+#singers .container{
+    width: 50%;
+}
+.singerStyle h2 {
+    background-color:#D62E3399;
+    color: white;
+    padding: 5px;
+    margin: 0;
+}
+.singerStyle p {
+    background-color:lightgray;
+    margin: 0;
+}
+/* End Section Singers */
+
+#Duration{
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 30vh;
+    position: relative;
+}
+#Duration .duration-layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+ }
+#Duration .content{
+    width: 70%;
+}
+ .time-box{
+    padding: 80px;
+    height: 40px;
+    border: solid 1px white;
+ }
+ /* contact */
+
+.contact .container{
+    width: 60%;
+}
+.contact .contact-btn button{
+    transition: all 0.5s;
+}
+.contact .contact-btn button:hover{
+    box-shadow: 0 0 0 4px lavender ;
+}
+.contact .card-icon{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid gray;
+    transition: all 0.5s;
+}
+.contact .card-icon:hover{
+    background-color: var(--main-color);
+}
+.contact .card-icon:hover i{
+    color: white;
+}
+.contact .card-icon i{
+    /* font-size: 0.3rem; */
+    color: gray;
+    transition: all 0.5s;
+}
+
+/* end contact */
